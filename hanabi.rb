@@ -8,7 +8,8 @@ class Hanabi < Formula
   version "1.0"
 
   def install
+    system "./configure"
     system "make"
-    bin.install "hanabi"
+    bin.install "src/hanabi"
   end
 end
